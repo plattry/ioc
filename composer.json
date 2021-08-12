@@ -1,0 +1,31 @@
+{
+    "name": "plattry/ioc",
+    "description": "The plattry ioc package",
+    "keywords": [
+        "plattry",
+        "ioc",
+        "container",
+        "facade"
+    ],
+    "type": "library",
+    "license": "GPL-3.0",
+    "autoload": {
+        "psr-4": {
+            "Plattry\\Ioc\\": "src/"
+        },
+        "exclude-from-classmap": [
+          "/test/"
+        ]
+    },
+    "authors": [
+        {
+            "name": "Andrew Lee",
+            "email": "sixser@foxmail.com"
+        }
+    ],
+    "minimum-stability": "stable",
+    "require": {
+        "php": "^8.0",
+        "psr/container": "^2.0"
+    }
+}

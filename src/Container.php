@@ -42,6 +42,15 @@ class Container implements ContainerInterface
     }
 
     /**
+     * Copy all resources from current container to a new one.
+     * @return void
+     */
+    public function __clone(): void
+    {
+        $this->pool[ContainerInterface::class] = $this;
+    }
+
+    /**
      * Get the container instance.
      * @return Container
      */
